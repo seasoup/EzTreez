@@ -1,0 +1,4 @@
+EzTreez (Pronounced Easy Treesy) is a small jQuery plugin that converts a table, list, or nested divs into a tree that collapses when clicked on.
+
+Right now the target is the entire tr/li/div, I'll add functionality later to target the click.
+
