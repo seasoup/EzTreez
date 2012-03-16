@@ -2,3 +2,31 @@ EzTreez (Pronounced Easy Treesy) is a small jQuery plugin that converts a table,
 
 Right now the target is the entire tr/li/div, I'll add functionality later to target the click.
 
+The snippet:
+
+<script>
+  $(function () {
+    $('.top').ezTreez(['one','two','three'])
+  });
+</script>
+
+...
+
+<table class="top">
+  <tr class="one">  <td>  one   </td></tr>
+  <tr class="two">  <td>  two   </td></tr>
+  <tr class="two">  <td>  two   </td></tr>
+  <tr class="three"><td>  three </td></tr>
+  <tr class="three"><td>  three </td></tr>
+  <tr class="three"><td>  three </td></tr>
+  <tr class="two">  <td>  two   </td></tr>
+  <tr class="one">  <td>  one   </td></tr>
+  <tr class="two">  <td>  two   </td></tr>
+  <tr class="three"><td>  three </td></tr>
+  <tr class="three"><td>  three </td></tr>
+  <tr class="two">  <td>  two   </td></tr>
+  <tr class="two">  <td>  two   </td></tr>
+</table>
+
+
+The class names that defined the hierarchy are passed in to the plugin in an array.  In the above example, when clicking on the tr with a class of 'one' everything up to the next tr with a class of 'one' will be hidden.  When you click on a tr with a class of 'two', it will hide all of the next neighboring nodes until it hits one with a class of 'two' or 'one'.  When you click on a tr with a class of 'three' it will do nothing since there are no deeper nestings.
