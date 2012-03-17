@@ -5,25 +5,28 @@
 
 <script>
   $(function () {
-    $('.top').ezTreez(['one','two','three'])
+    $('.top').ezTreez({
+      'hierarchy': ['one','two','three'],
+      'click_element_selector': '.click'
+    });
   });
 </script>
 </head>
 <body>
 <table class="top">
-  <tr class="one">  <td>  one   </td></tr>
-  <tr class="two">  <td>  two   </td></tr>
-  <tr class="two">  <td>  two   </td></tr>
-  <tr class="three"><td>  three </td></tr>
-  <tr class="three"><td>  three </td></tr>
-  <tr class="three"><td>  three </td></tr>
-  <tr class="two">  <td>  two   </td></tr>
-  <tr class="one">  <td>  one   </td></tr>
-  <tr class="two">  <td>  two   </td></tr>
-  <tr class="three"><td>  three </td></tr>
-  <tr class="three"><td>  three </td></tr>
-  <tr class="two">  <td>  two   </td></tr>
-  <tr class="two">  <td>  two   </td></tr>
+  <tr class="one">  <td><a class="click">[x]</a>  one   </td></tr>
+  <tr class="two">  <td><a class="click">[x]</a>  two   </td></tr>
+  <tr class="two">  <td><a class="click">[x]</a>  two   </td></tr>
+  <tr class="three"><td><a class="click">[x]</a>  three </td></tr>
+  <tr class="three"><td><a class="click">[x]</a>  three </td></tr>
+  <tr class="three"><td><a class="click">[x]</a>  three </td></tr>
+  <tr class="two">  <td><a class="click">[x]</a>  two   </td></tr>
+  <tr class="one">  <td><a class="click">[x]</a>  one   </td></tr>
+  <tr class="two">  <td><a class="click">[x]</a>  two   </td></tr>
+  <tr class="three"><td><a class="click">[x]</a>  three </td></tr>
+  <tr class="three"><td><a class="click">[x]</a>  three </td></tr>
+  <tr class="two">  <td><a class="click">[x]</a>  two   </td></tr>
+  <tr class="two">  <td><a class="click">[x]</a>  two   </td></tr>
 </table>
 
 <br><br>
