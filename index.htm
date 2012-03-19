@@ -4,6 +4,12 @@
 <script src="eztreez.js"></script>
 
 <script>
+  $(document).bind('DOMContentLoaded', function () {
+    console.log('domcontent');
+  });
+  $(window).bind('load', function () {
+    console.log('load');
+  });
   $(function () {
     $('.top').ezTreez({
       'hierarchy': ['one','two','three'],
@@ -32,37 +38,37 @@
 <br><br>
 
 <ul class="top">       
-  <li class="one">    one    </li>
-  <li class="two">    two    </li>
-  <li class="two">    two    </li>
-  <li class="three">  three  </li>
-  <li class="three">  three  </li>
-  <li class="three">  three  </li>
-  <li class="two">    two    </li>
-  <li class="one">    one    </li>
-  <li class="two">    two    </li>
-  <li class="three">  three  </li>
-  <li class="three">  three  </li>
-  <li class="two">    two    </li>
-  <li class="two">    two    </li>
+  <li class="one">    <a class="click">[x]</a> one    </li>
+  <li class="two">    <a class="click">[x]</a> two    </li>
+  <li class="two">    <a class="click">[x]</a> two    </li>
+  <li class="three">  <a class="click">[x]</a> three  </li>
+  <li class="three">  <a class="click">[x]</a> three  </li>
+  <li class="three">  <a class="click">[x]</a> three  </li>
+  <li class="two">    <a class="click">[x]</a> two    </li>
+  <li class="one">    <a class="click">[x]</a> one    </li>
+  <li class="two">    <a class="click">[x]</a> two    </li>
+  <li class="three">  <a class="click">[x]</a> three  </li>
+  <li class="three">  <a class="click">[x]</a> three  </li>
+  <li class="two">    <a class="click">[x]</a> two    </li>
+  <li class="two">    <a class="click">[x]</a> two    </li>
 </ul>     
 
 <br><br>
 
 <div class="top">       
-  <div class="one">   one    </div>
-  <div class="two">   two    </div>
-  <div class="two">   two    </div>
-  <div class="three"> three  </div>
-  <div class="three"> three  </div>
-  <div class="three"> three  </div>
-  <div class="two">   two    </div>
-  <div class="one">   one    </div>
-  <div class="two">   two    </div>
-  <div class="three"> three  </div>
-  <div class="three"> three  </div>
-  <div class="two">   two    </div>
-  <div class="two">   two    </div>
+  <div class="one">   <a class="click">[x]</a> one    </div>
+  <div class="two">   <a class="click">[x]</a> two    </div>
+  <div class="two">   <a class="click">[x]</a> two    </div>
+  <div class="three"> <a class="click">[x]</a> three  </div>
+  <div class="three"> <a class="click">[x]</a> three  </div>
+  <div class="three"> <a class="click">[x]</a> three  </div>
+  <div class="two">   <a class="click">[x]</a> two    </div>
+  <div class="one">   <a class="click">[x]</a> one    </div>
+  <div class="two">   <a class="click">[x]</a> two    </div>
+  <div class="three"> <a class="click">[x]</a> three  </div>
+  <div class="three"> <a class="click">[x]</a> three  </div>
+  <div class="two">   <a class="click">[x]</a> two    </div>
+  <div class="two">   <a class="click">[x]</a> two    </div>
 </div>          
 </body>
 </html>
